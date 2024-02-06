@@ -9,6 +9,7 @@ const infuraKey = process.env.INFURA_PROJECT_ID;
 const etherscanApiKey = process.env.ETHERSCAN_API_KEY;
 const bscscanApiKey = process.env.BSC_SCAN_API_KEY;
 const ftmscanApiKey = process.env.FTM_SCAN_API_KEY;
+const harmonyApiKey = process.env.HARMONY_SCAN_API_KEY;
 const fromAddress = process.env.FROM_ADDRESS;
 
 module.exports = {
@@ -42,6 +43,13 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(mnemonic, `https://bsc-dataseed.binance.org/`),
       network_id: 56,
+      confirmations: 2,
+      from: fromAddress,
+    },
+    harmony: {
+      provider: () =>
+        new HDWalletProvider(mnemonic, `https://api.harmony.one/`),
+      network_id: 1666600000,
       confirmations: 2,
       from: fromAddress,
     },
@@ -105,5 +113,6 @@ module.exports = {
     etherscan: etherscanApiKey,
     bscscan: bscscanApiKey,
     ftmscan: ftmscanApiKey,
+    harmony: harmonyApiKey,
   },
 };
