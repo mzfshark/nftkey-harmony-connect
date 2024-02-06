@@ -43,7 +43,7 @@
     "@typechain/truffle-v5": "^8.0.7",
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^16.11.4",
+    "@types/node": "^16.20.2",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "chai": "^5.0.3",
