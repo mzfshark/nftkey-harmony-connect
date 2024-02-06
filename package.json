@@ -1,5 +1,5 @@
 {
-  "name": "nftkey-marketplace-v2",
+  "name": "@axodus/marketplace-v2",
   "version": "1.0.0",
   "description": "NFTKEY Marketplace smart contract",
   "main": "truffle-config.js",
@@ -14,6 +14,7 @@
     "etherscan-verify:bsc": "yarn etherscan-verify --network bsc",
     "etherscan-verify:bsctestnet": "yarn etherscan-verify --network bsctestnet",
     "etherscan-verify:ftm": "yarn etherscan-verify --network ftm",
+    "etherscan-verify:harmony": "yarn etherscan-verify --network harmony",
     "etherscan-verify:main": "yarn etherscan-verify --network main",
     "etherscan-verify:ropsten": "yarn etherscan-verify --network ropsten",
     "generate-types": "typechain --target=truffle-v5 'build/contracts/*.json'",
@@ -23,6 +24,7 @@
     "migrate:bsc": "yarn migrate --network bsc",
     "migrate:bsctestnet": "yarn migrate --network bsctestnet",
     "migrate:ftm": "yarn migrate --network ftm",
+    "migrate:harmony": "yarn migrate --network harmony",
     "migrate:main": "yarn migrate --network main",
     "migrate:ropsten": "yarn migrate --network ropsten",
     "postinstall": "yarn compile && yarn generate-types",
@@ -63,6 +65,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/if-x/nftkey-marketplace-v2"
+    "url": "https://github.com/mzfshark/nftkey-marketplace-v2"
   }
 }
