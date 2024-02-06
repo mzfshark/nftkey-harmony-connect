@@ -3,7 +3,8 @@ require("ts-node").register({
   files: true,
 });
 
-import HDWalletProvider from "@truffle/hdwallet-provider";
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+
 const mnemonic = process.env.MNEUMONIC;
 const infuraKey = process.env.INFURA_PROJECT_ID;
 const etherscanApiKey = process.env.ETHERSCAN_API_KEY;
